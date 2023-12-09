@@ -18,8 +18,7 @@ int main(void)
 	PinMode(DIO_PD7,OUTPUT);
 	PinMode(DIO_PB0,OUTPUT);
 	PinMode(DIO_PB1,OUTPUT);
-	//PinMode(DIO_PC0,INPUT);
-	
+	PinMode(DIO_PC0,INPUT);
 	
 	LCD_init();
 	ADC_init(ADC_PRESCALAR_128,AVCC);
@@ -31,7 +30,7 @@ int main(void)
     while (1) 
     {
 		
-Display_Temperature();	
+		Display_Temperature();	
     }
 }
 
